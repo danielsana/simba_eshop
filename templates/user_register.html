@@ -42,7 +42,7 @@
 
         body {
             background-color: var(--bg);
-            display: flex;
+            /* display: flex; */
             height: 100vh;
             overflow: hidden;
             transition:
@@ -411,6 +411,9 @@
 </head>
 
 <body>
+    <header>
+        {%include'navbar.html'%}
+    </header>
     <main class="login">
         <div class="login__col">
             <header class="login__brand">Ishop Ecommerce</header>
@@ -463,7 +466,7 @@
             </div>
         </div>
     </main>
-
+    
 </body>
 
 </html>
