@@ -28,19 +28,27 @@
             <!-- HOME SECTION -->
             <section class="container section-1">
                 <div class="slogan">
-                    <h1 class="company-title">Alpha Online Shop</h1>
+                    <h1 class="company-title">Simba Online Shop</h1>
                     <h2 class="company-slogan">
                         A website where vendors upload products and buyers
                         purchase goods or services from.
                     </h2>
                     <br>
-                    <a href='/vendor_login' class="btn ">Sell Products</a>
-                    <a href='/buy_products' class="btn ">Buy Products</a>
+                    <a href='/vendor_login' class="btn vendorlogin">Sell Products</a>
+                    <a href='/buy_products' class="btn buyproducts">Buy Products</a>
                 </div>
                 <div class="home-computer-container">
-                    <img class="home-computer"
-                        src="../static/images/cart1.jpg"
-                        alt="a computer in dark with shadow" class="home-img">
+                    <div class="mymain">
+                        <div class="mycarousel">
+                            <img class="home-computer"
+                            src="../static/images/cart1.jpg"
+                            alt="a computer in dark with shadow" class="home-img">
+                            </div>
+                        <div class="offerthings">
+                            <h3 class="lead">halooo!!!</h3>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -65,7 +73,7 @@
             </section>
 
             <!-- SUBSCRIBE SECTION-->
-            <section>
+            <section class="myfooter">
                 {%include 'footer.html'%}
             </section>
         </main>

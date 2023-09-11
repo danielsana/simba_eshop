@@ -43,11 +43,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   background-color: var(--white-color);
+  height: 100%;
 }
 
 /* ================= HEADER ================ */
 header {
-  
+  position: fixed;
+  background-color:rgb(255,185,95);
+  z-index: 5;
+  width: 100%;
+  padding: 0;
 }
 
 .menu-toggle {
@@ -105,6 +110,12 @@ header {
   font-weight: 400;
   line-height: 1.8rem;
 }
+.slogan a:hover{
+  background-color: #b5dce7;
+  border-radius: 10px;
+  color: orange;
+}
+
 
 /* -------- OFFER SECTION ------------- */
 .section-2 {
@@ -280,45 +291,7 @@ input[type="submit"]:hover {
   color: var(--white-color);
 }
 /* =============== FOOTER =============== */
-.top-footer {
-  background-color: var(--second-color);
-  display: flex;
-  flex-direction: column;
-}
-.footer-title {
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 1rem 0;
-  background-image: -webkit-linear-gradient(
-    120deg,
-    var(--primary-color-alt),
-    var(--primary-color)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.footer-items h3 {
-  cursor: pointer;
-  font-weight: 300;
-  font-size: 1.1rem;
-  padding: 0.1rem 0;
-  color: var(--white-color-alt);
-}
-.footer-items h3:hover {
-  text-decoration: underline;
-}
-.footer-items h3:last-child {
-  padding-bottom: 2rem;
-}
 
-.end-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--third-color);
-}
 .copyright {
   color: var(--white-color-alt);
   padding: 1rem 0;
@@ -335,6 +308,11 @@ input[type="submit"]:hover {
 }
 .designer:hover {
   text-decoration: underline;
+}
+.myfooter{
+  margin-bottom: 0;
+  /* background-color: black; */
+  padding-bottom: 0;
 }
 
 /* =============== MEDIA QUERIES ======= */
